@@ -2775,3 +2775,85 @@ button {
   color: #444;
   line-height: 1.6;
 }
+.home-founder {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.founder-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.founder-photo-wrapper {
+  text-align: center;
+}
+
+.founder-photo {
+  width: 220px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+  display: block;
+  margin: auto;
+}
+
+.founder-name {
+  margin: 15px 0 5px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1b3b36;
+}
+
+.founder-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+.founder-message {
+  flex: 1;
+  background: #f2f5f4;
+  padding: 25px 20px;
+  border-left: 5px solid #1b3b36;
+  border-radius: 8px;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .founder-container {
+    flex-direction: column;
+  }
+
+  .founder-message {
+    border-left: none;
+    border-top: 5px solid #1b3b36;
+    margin-top: 20px;
+  }
+
+  .founder-photo {
+    width: 180px;
+  }
+
+  .founder-name {
+    font-size: 1.5rem;
+  }
+
+  .founder-title {
+    font-size: 0.95rem;
+  }
+
+  .founder-message {
+    font-size: 1rem;
+    padding: 20px;
+  }
+}
