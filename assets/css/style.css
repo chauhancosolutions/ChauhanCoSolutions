@@ -2775,85 +2775,89 @@ button {
   color: #444;
   line-height: 1.6;
 }
-.home-founder {
-  padding: 60px 20px;
-  max-width: 1100px;
-  margin: auto;
+/* =========================
+   FINAL HERO – PERFECT FIX
+========================= */
+
+.hero-final {
+  background: #e9f2f1 !important; /* greenish */
+  padding: 0 !important;
 }
 
-.founder-container {
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+
   display: flex;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-end; /* 🔥 PHOTO BOTTOM TOUCH */
+
+  min-height: 560px; /* EXACT photo base */
+  padding: 120px 20px 0;
+  box-sizing: border-box;
 }
 
-.founder-photo-wrapper {
-  text-align: center;
+/* TEXT */
+.hero-left {
+  max-width: 55%;
 }
 
-.founder-photo {
-  width: 220px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+.hero-left h1 {
+  font-size: 48px;
+  color: #0f3d3e;
+  margin-bottom: 12px;
+}
+
+.hero-left h2 {
+  font-size: 22px;
+  color: #2c5555;
+  margin-bottom: 16px;
+}
+
+.hero-left p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 28px;
+}
+
+/* IMAGE */
+.hero-right {
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-right img {
+  height: 520px;   /* 🔥 IMAGE SIZE */
+  width: auto;
   display: block;
-  margin: auto;
 }
 
-.founder-name {
-  margin: 15px 0 5px;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #1b3b36;
-}
+/* ================= MOBILE ================= */
 
-.founder-title {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #4a4a4a;
-}
+@media (max-width: 900px) {
 
-.founder-message {
-  flex: 1;
-  background: #f2f5f4;
-  padding: 25px 20px;
-  border-left: 5px solid #1b3b36;
-  border-radius: 8px;
-  font-style: italic;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-/* Mobile responsiveness */
-@media screen and (max-width: 768px) {
-  .founder-container {
+  .hero-container {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 520px;
+    padding: 100px 20px 0;
   }
 
-  .founder-message {
-    border-left: none;
-    border-top: 5px solid #1b3b36;
-    margin-top: 20px;
-  }
+ .hero-left {
+  padding-top: 220px;   /* 🔥 TEXT KO UPAR LATA HAI */
+  max-width: 1620px;
+}
 
-  .founder-photo {
-    width: 180px;
-  }
 
-  .founder-name {
-    font-size: 1.5rem;
+  .hero-right img {
+    height: 420px;
+    margin-top: 30px;
   }
-
-  .founder-title {
-    font-size: 0.95rem;
-  }
-
-  .founder-message {
-    font-size: 1rem;
-    padding: 20px;
-  }
+}
+.hero-section {
+  background: #eef6f4; /* greenish */
+  min-height: 78vh;    /* 🔥 height define */
+  display: flex;
+  align-items: flex-start; /* ❌ center nahi */
 }
